@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Feschuk CV</title>
-</head>
-<body>
-    <table>
-        <tr>
-            <td><img src="img/avatar1.jfif" width="200"></td>
-            <td><h1>Фещук Людмила</h1>
-                <p><em>Я студентка <strong>IT  курсів</strong></em></p>  
-                <p>Люблю подорожувати і вивчати іноземні мови</p> </td>
+    <head>
+        <meta lang="ua">
+        <meta charset="UTF-8">
+        <title>Feschuk CV</title>
+        <link href="styles.css"/ rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="info">
+                <img src="avatar1.jfif"class="avatar"/>
+                <div class="info-text">
+                    <h1>Фещук Людмила</h1>
+                    <p>Я студентка <strong>IT  курсів</strong></p>  
+                    <p>Люблю подорожувати і вивчати іноземні мови</p>
+                    <h4> Мої соціальні мережі</h4>
+                    <a href="https://instagram.com/liudmilafeshchuk" target="_blank" >Instagram</a>
+                    |
+                    <a href="https://t.me/Фещук Людмила">Telegram</a>
+                </div>
+            </div>
+            <div class="card bg-yellow">
+                <h2>Мої хоббi</h2>
+                <ol class="list">
+                    <li>Подорожі</li>
+                    <li>Прогулянки до лісу</li>
+                </ol>
+            </div>
+            <div class="card bg-green">
+                <h2>Досвід роботи</h2>
+                <table class="table">
+                    <tr>
+                        <td>2009-2015</td>
+                        <td>Lime fitness</td>
+                        <td>Менеджер з продажу послуг</td>
+                    </tr>
+                    <tr>
+                        <td>2015-now</td>
+                        <td>Vfs global</td>
+                        <td>Менеджер з обслуговування клієнтів</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contact">
+                <h2>Зв'яжіться зі мною</h2>
 
-        </tr>
-    </table>
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" placeholder="Зазначте Ваше ім'я...">
+                        </div>
 
-    <hr> 
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введіть Ваш email...">
+                        </div>
+                    </div>
 
-    <h2> Мої соціальні мережі</h2>
-    <ul>
-        <li> <a href="https://instagram.com/liudmilafeshchuk" target="_blank" >Instagram</a></li>
-        <li> <a href="https://t.me/Фещук Людмила">Telegram</a></li>
-        </ul>
+                    <div class="form-group">
+                        <label for="text">Ваше повідомлення:</label>
+                        <textarea id="text" cols="5" rows="2"></textarea>
+                    </div>
 
-        <hr>
-
-    <h2>Мої хоббі!</h2>
-<ol>
-    <li>Подорожі</li>
-    <li>Прогулянки до лісу</li>
-    
-</ol>
-
-<hr>
-
-<h2>Досвід роботи</h2>
-<table>
-    <tr>
-        <th>Рік</th>
-        <th>Назва компанії</th>
-        <th>Посада</th>
-    </tr>
-<tr>
-    <td>2009-2015</td>
-    <td>Lime fitness</td>
-    <td>Менеджер з продажу послуг</td>
-</tr>
-<tr>
-    <td>2015-2022</td>
-    <td>Vfs global</td>
-    <td>Менеджер з обслуговування клієнтів</td>
-</tr>
-</table>
-
-<hr>
-<h2>Зв'яжіться зі мною</h2>
-
-<form>
-    <label for="name">Ваше ім'я:</label>
-    <input type="text" id="name" placeholder="Зазначте Ваше ім'я...">
-
-    <br>
-
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Введіть Ваш email...">
-
-    <br>
-
-    <label for="text">Ваше повідомлення:</label>
-    <textarea id="text" cols="5" rows="2"></textarea>
-
-    <br>
-
-    <input type="submit" value="Зв'язатися">
-</form>
-
-</body>
+                    <input class="btn" type="submit" value="Зв'язатися">
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
